@@ -1,0 +1,29 @@
+name: Tool request
+description: Suggest a new browser tool for ToolsViewer
+title: "[Tool] "
+labels: ["tool-request"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Proposed tool name
+      placeholder: e.g. CSV Diff Viewer
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: features
+    attributes:
+      label: Must-have features
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Fit for ToolsViewer
+      options:
+        - label: Should run in the browser / keep data local when possible
+          required: false

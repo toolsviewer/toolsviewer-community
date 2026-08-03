@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/toolsviewer/toolsviewer-community/discussions
+    about: Ideas and questions that aren’t ready as formal issues
+  - name: Contact ToolsViewer
+    url: https://www.toolsviewer.com/contact/
+    about: Private support

@@ -1,0 +1,37 @@
+name: Bug report
+description: Something broken on ToolsViewer
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Where did it happen?
+      options:
+        - HTML Viewer Pro
+        - Email Viewer
+        - RegEx Visualizer & Explainer
+        - JSON Formatter & Converter
+        - Homepage / other page
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      placeholder: https://www.toolsviewer.com/...
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs actual
+  - type: input
+    id: env
+    attributes:
+      label: Browser / device
+      placeholder: Safari iOS 18, Chrome macOS, etc.
